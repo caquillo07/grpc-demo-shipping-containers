@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
-	pb "github.com/caquillo07/shipper/consignment-service/proto/consignment"
+	pb "github.com/caquillo07/grpc-demo-shipping-containers/consignment-service/proto/consignment"
 	microclient "github.com/micro/go-micro/client"
 	"github.com/micro/go-micro/cmd"
 	"io/ioutil"
@@ -12,7 +12,6 @@ import (
 )
 
 const (
-	address         = "localhost:50051"
 	defaultFilename = "consignment.json"
 )
 

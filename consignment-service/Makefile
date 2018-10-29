@@ -1,5 +1,5 @@
 build:
-	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/caquillo07/shipper/consignment-service \
+	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/caquillo07/grpc-demo-shipping-containers/consignment-service \
 	proto/consignment/consignment.proto
 	docker build -t consignment-service .
 
